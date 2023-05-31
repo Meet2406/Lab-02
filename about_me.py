@@ -34,7 +34,7 @@ def main():
 
     # Step 3: Print student name and ID
     print_student_name_and_id(about_me)
-
+    
     # Step 4: Print a bullet list of pizza toppings
     print_pizza_toppings(about_me)
 
@@ -61,8 +61,11 @@ def print_student_name_and_id(my_info):
     """
     # TODO: Complete function body per Step 3
     # Print sentence containing name
+    Firstname = (my_info['name'].split())
+    Firstname = Firstname[0]
+    print(f"My name is {my_info['name']}, but you can call me Lord {Firstname}")
     # Print sentence containing student ID
-    print()
+    print(f"My student ID is {my_info['Student ID']}.")
 
 def print_pizza_toppings(my_info):
     """Prints a bullet list of favourite pizza toppings
